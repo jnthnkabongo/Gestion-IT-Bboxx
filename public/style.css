@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+.sidebar h2 {
+    margin-top: 0;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: background 0.3s;
+}
+.sidebar a:hover {
+    background-color: #555;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
